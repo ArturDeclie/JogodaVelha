@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha Rick & Morty</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+
+<body>
+
+    <p class="computador">Deseja jogar contra o computador?</p>
+
+        <form action="">
+
+            <section class="sim">
+                <label for=""> <input type="radio" name="cpu" id="cpus" checked="checked">Sim</label>
+            </section>
+
+            <label for=""> <input type="radio" name="cpu" id="cpun"> Não </label>
+       </form>
+
+    <div class="container">
+        <table cellspacing="0">
+
+            <tr>
+                <td id="c1" onclick="return checkgame(this.id)"></td>
+                <td id="c2" onclick="return checkgame(this.id)"></td>
+                <td id="c3" onclick="return checkgame(this.id)"></td>
+            </tr>
+
+            <tr>
+                <td id="c4" onclick="return checkgame(this.id)"></td>
+                <td id="c5" onclick="return checkgame(this.id)"></td>
+                <td id="c6" onclick="return checkgame(this.id)"></td>
+            </tr>
+
+            <tr>
+                <td id="c7" onclick="return checkgame(this.id)"></td>
+                <td id="c8" onclick="return checkgame(this.id)"></td>
+                <td id="c9" onclick="return checkgame(this.id)"></td>
+            </tr>
+        </table>
+    </div>    
+        <h2 id="texto"></h2>
+        <button id="reset" onclick="reset()">
+            <span>REINICIAR</span>
+        </button>
+
+        
+
+
+
+
+</body>
+
+</html>
